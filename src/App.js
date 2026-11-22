@@ -8,6 +8,7 @@ import InsuranceForm from './components/InsuranceForm';
 import Findings from './components/Findings';
 import LetterPanel from './components/LetterPanel';
 import CallLog from './components/CallLog';
+import "./App.css"
 
 const TABS = [
   { id: 'bill', step: '1', label: 'Bill' },
