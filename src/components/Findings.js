@@ -33,6 +33,16 @@ export default function Findings({ audit, isIncluded, onToggle, onGoto, onSample
           : 'No mismatches found in the numbers you entered.'}
       </p>
 
+      {summary.eobOwe === null ? (
+        <p className="notice">
+          Your insurance statement is not entered yet, so the bill has not been compared with it. Only the checks within
+          the bill itself have run.{' '}
+          <button type="button" className="inline-link" onClick={() => onGoto('insurance')}>
+            Add the insurance statement
+          </button>
+        </p>
+      ) : null}
+
       {findings.length === 0 ? (
         <p className="notice">
           That does not prove the bill is right. If you have not seen an itemized statement with billing codes, ask for one,

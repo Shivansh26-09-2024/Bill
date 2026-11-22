@@ -21,6 +21,15 @@ export default function BillForm({ bill, flagged, onChange }) {
     <div>
       <h2>The bill</h2>
       <p className="panel-intro">Copy the numbers from the statement you received from the provider.</p>
+      <details className="help">
+        <summary>Where do I find these numbers?</summary>
+        <p>
+          On the bill, look for a table with a date, a code and an amount for each service. Codes are usually five
+          characters, such as 85025, and you do not need to know what they mean: BillCheck only checks whether they
+          repeat or conflict. If your bill has no such table, tick the box below the form and ask the provider for an
+          itemized bill.
+        </p>
+      </details>
 
       <div className="grid">
         <Field label="Provider or hospital">

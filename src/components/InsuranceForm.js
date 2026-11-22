@@ -25,6 +25,14 @@ export default function InsuranceForm({ eob, onChange }) {
       <p className="panel-intro">
         This is the Explanation of Benefits (EOB) your insurer sent. It is not a bill, and it shows what they say you owe.
       </p>
+      <details className="help">
+        <summary>Which number is which?</summary>
+        <p>
+          Labels vary by insurer. <strong>Amount billed</strong> is what the provider charged the insurer, often shown as
+          “Billed” or “Charges”. <strong>You owe</strong> may be called “Patient responsibility”, “Your share” or “You may
+          owe”. The EOB is usually marked “This is not a bill”.
+        </p>
+      </details>
 
       <div className="grid">
         <Field label="Insurance company">
